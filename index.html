@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Four card feature section</title>
+
+  
+  <style>
+body {font-family: 'Poppins', sans-serif;
+      font-size: 0.9375rem;
+      background-color: hsla(0, 0%, 98%, 0.856)}
+
+.grid-container {margin: 3rem 6rem 3rem 6rem;
+                display: grid;
+                grid-column: 1fr 1fr 1fr;
+                grid-row: 1fr 1fr 1fr;
+                grid-column-gap: 30px;
+                grid-row-gap: 30px;
+                grid-template-areas: "header header header" "supervisor team-builder calculator" "supervisor karma calculator"}
+
+.reliable {font-weight: 200;}
+
+
+h4 {font-weight: 200;
+    color: hsl(229, 6%, 66%);}
+
+.header {background-color:hsla(0, 0%, 98%, 0.856);
+        text-align: center;
+        grid-area: header;
+        padding-bottom: 1rem;}
+
+.supervisor {background-color:white;
+            grid-area: supervisor;
+            height: 15rem;
+            border-radius: 5px;
+            border-top: solid hsl(180, 62%, 55%);
+            margin-top: 8rem;
+            box-shadow: 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);
+           }
+
+.team-builder {background-color: white;
+              grid-area: team-builder;
+              height: 15rem;
+              border-radius: 5px;
+            border-top: solid hsl(0, 78%, 62%);
+            box-shadow: 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);}
+
+.karma {background-color: white;
+      grid-area: karma;
+      height: 15rem;
+      border-radius: 5px;
+      border-top: solid hsl(34, 97%, 64%);
+      box-shadow: 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);}
+
+.calculator {background-color: white;
+            grid-area: calculator;
+            height: 15rem;
+            border-radius: 5px;
+            border-top: solid hsl(212, 86%, 64%);
+            margin-top: 8rem;
+            box-shadow: 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);
+     }
+
+.grid-headers {padding-top: 1rem;
+              padding-left: 2rem;}
+
+  p {text-align: center;
+    color: hsl(229, 6%, 66%);}
+
+  img {padding-left: 13rem;}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    @media only screen and (max-width: 900px) {
+
+  .grid-container {display: grid;
+                  grid-column: 1fr;
+                  grid-row: 5fr;
+                  grid-template-areas: "header" "supervisor" "team-builder" "karma" "calculator"}
+
+  .supervisor {margin-top: 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);}
+
+  .calculator {margin-top: 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);}
+
+  .karma {box-shadow: 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);}
+
+  .team-builder {box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem hsl(229, 6%, 66%);}
+  img {
+        padding-left: 18rem;}
+
+
+
+  </style>
+</head>
+<body>
+  <section class="grid-container">
+
+ <div class="header">
+<h1 class="reliable">Reliable, efficient delivery</h1>
+<h1 class="powered">Powered by Technology</h1>
+
+
+  <h4>Our Artificial Intelligence powered tools use millions of project data points 
+  to ensure that your project is successful</h4>
+</div> 
+
+
+<div class="supervisor">
+  <h3 class="grid-headers">Supervisor</h3>
+  <p>Monitors activity to identify project roadblocks</p>
+  <img src="./images/icon-supervisor.svg" alt="">
+</div>
+
+<div class="team-builder">
+  <h3 class="grid-headers">Team Builder</h3>
+ <p> Scans our talent network to create the optimal team for your project</p>
+  <img src="./images/icon-team-builder.svg" alt="">
+</div>
+
+<div class="karma">
+  <h3 class="grid-headers"> Karma</h3>
+  <p>Regularly evaluates our talent to ensure quality</p>
+  <img src="./images/icon-karma.svg" alt="">
+</div>
+
+<div class="calculator">
+  <h3 class="grid-headers">Calculator </h3>
+  <p>Uses data from past projects to provide better delivery estimates</p>
+  <img src="./images/icon-calculator.svg" alt="">
+</div>
+</section>
+
+  
+
+</body>
+</html>
